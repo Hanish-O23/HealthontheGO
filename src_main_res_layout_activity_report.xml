@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_report"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.hanish.health_on_the_go.Report">
+
+    <ImageView
+        android:id="@+id/ivFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/mainframe"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></ImageView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/stat_sys_download"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/floatingActionButton"/>
+
+    <TextView
+        android:layout_width="400sp"
+        android:layout_height="wrap_content"
+        android:text="Disease:"
+        android:fontFamily="cursive"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvAge"
+        android:layout_below="@+id/tvName"
+        android:layout_alignLeft="@+id/tvName"
+        android:layout_alignStart="@+id/tvName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report"
+        android:gravity="center"
+        android:fontFamily="cursive"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tVReport"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/small"
+        android:id="@+id/imageView2"
+        android:layout_marginTop="123dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+
+
+    <TextView
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:text="Report No:"
+        android:fontFamily="cursive"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/tvNo"
+
+        android:layout_alignBaseline="@+id/tvDate"
+        android:layout_alignBottom="@+id/tvDate"
+        android:layout_alignLeft="@+id/tvName"
+        android:layout_alignStart="@+id/tvName"/>
+
+    <TextView
+        android:layout_width="400sp"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:fontFamily="cursive"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/tvName"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_below="@+id/tvDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:text="Date:"
+        android:fontFamily="cursive"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/tvDate"
+        android:layout_marginTop="9dp"
+        android:layout_below="@+id/tVReport"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/app"
+        android:id="@+id/ivapp"
+        android:layout_below="@+id/tvAge"
+        android:layout_toRightOf="@+id/tVReport"
+        android:layout_toEndOf="@+id/tVReport"
+        android:layout_marginTop="38dp"/>
+
+
+
+</RelativeLayout>
